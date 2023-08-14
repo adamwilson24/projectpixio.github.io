@@ -272,15 +272,36 @@ nav{
 
 .phase {
   margin-top: 20px;
-  width: 400px;
-  height: 500px;
+  margin-bottom:40px;
+  width: 300px;
+  height: 400px;
   background-color: #1a1a1a;
   border-radius: 30px;
   margin-right: 25px; /* Add spacing between rectangles */
-  margin-left :25px
+  margin-left :25px;
+  color: var(--light);
+  padding-left:20px;
+  padding-right:10px;
+  font-size:14px;
+  box-shadow: 0px 0px 0px #f5c144;
+  transition: all 300ms ease-out;
+}
+.phase:hover{
+  box-shadow: 1px 1px 0px #f5c144,
+                2px 2px 0px #f5c144,
+                3px 3px 0px #f5c144,
+                4px 4px 0px #f5c144,
+                5px 5px 0px #f5c144,
+                6px 6px 0px #f5c144,
+                7px 7px 0px #f5c144,
+                8px 8px 0px #f5c144,
+                9px 9px 0px #f5c144;
 }
 .phase-desc{
   color: var(--light);
   margin-top:10px;
-  margin-left:20px;
+  font-size:25px;
+}
+.roadmap-li{
+  margin-top:12px;
 }
