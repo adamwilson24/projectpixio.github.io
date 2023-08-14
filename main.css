@@ -29,7 +29,7 @@ nav{
   left:0;
   right:0;
   z-index:99;
-  background-color: var(--dark);
+  background: linear-gradient(to bottom, var(--dark) 65%, transparent 100%);
   padding: 16px 32px;
 }
 
@@ -116,6 +116,12 @@ nav{
 .menu a.discord:hover{
   color: #6f79f7;
 }
+.menu a.twitter{
+  color: #8c8c8c;
+}
+.menu a.twitter:hover{
+  color: #1d9bf0;
+}
 .menu a.opensea{
   color:#8c8c8c;
 }
@@ -134,18 +140,24 @@ nav{
 .main-page{
   background-color: var(--dark);
   height: auto;
+  margin-top:105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #page-logo{
   width:100px;
   margin-left:15px;
   padding-left:10px;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 #grid-container{
   display:grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(6, 225px);
+  grid-template-rows: repeat(2,225px);
   grid-gap:10px;
   max-width: 95vw;
   margin: 0 auto;
@@ -160,7 +172,7 @@ nav{
   color:var(--light);
   text-align: center;
   /*padding-top:100%;*/
-  font-size:1.2rem;
+  font-size:12px;
   grid-column: span 1;
 }
 .grid-item:nth-last-child(-n +6){
@@ -236,4 +248,37 @@ nav{
 }
 .grid-item:hover .overlay{
   opacity: 1;
+}
+.roadmap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#roadmap-title{
+  margin-top:15px;
+  font-size:3.5rem;
+  font-weight:bold;
+  color:var(--light);
+  text-align: center;
+}
+.phase-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.phase {
+  margin-top: 20px;
+  width: 400px;
+  height: 500px;
+  background-color: #1a1a1a;
+  border-radius: 30px;
+  margin-right: 50px; /* Add spacing between rectangles */
+}
+.phase-desc{
+  color: var(--light);
+  margin-top:10px;
+  margin-left:20px;
 }
