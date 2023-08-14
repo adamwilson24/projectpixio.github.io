@@ -159,10 +159,11 @@ nav{
   grid-template-columns: repeat(6, 225px);
   grid-template-rows: repeat(2,225px);
   grid-gap:10px;
-  max-width: 95vw;
+  max-width: 90vw;
   margin: 0 auto;
   margin-top:15px;
   padding:20px;
+  justify-content: center;
 }
 .grid-item{
   
@@ -237,7 +238,7 @@ nav{
   /*background: rgba(255, 255, 255, 0.5);*/
   color: var(--light);
   height:45px;
-  width:14.5vw;
+  width:200px;
   margin-top:-45px;
   transition: .5s ease;
   opacity: 0;
@@ -275,7 +276,8 @@ nav{
   height: 500px;
   background-color: #1a1a1a;
   border-radius: 30px;
-  margin-right: 50px; /* Add spacing between rectangles */
+  margin-right: 25px; /* Add spacing between rectangles */
+  margin-left :25px
 }
 .phase-desc{
   color: var(--light);
