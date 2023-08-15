@@ -433,10 +433,7 @@ nav{
   padding-top: 10px;
   padding-left:30px;
 }
-.creator-desc br{
-  margin-top: 10px;
-  margin-bottom:10px;
-}
+
 .creator-description{
   margin-top:10px;
   margin-bottom:10px;
@@ -470,5 +467,31 @@ nav{
   }
   100% {
     box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+}
+@media (max-width: 768px){
+  .creator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .creator-desc {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 500px;
+    background-color: #1a1a1a;
+    border-radius: 30px;
+    margin-right: 25px; /* Add spacing between rectangles */
+    margin-left :25px;
+    color: var(--light);
+    padding-right:10px;
+    font-size:16px;
+    box-shadow: 0px 0px 0px var(--dark);
+    transition: all 300ms ease-out;
+    overflow: auto; 
+    padding-top: 10px;
+    padding-left:30px;
   }
 }
