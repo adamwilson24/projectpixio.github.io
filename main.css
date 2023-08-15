@@ -135,6 +135,7 @@ nav{
   .menu{
     display: flex;
   }
+  
 
 }
 .main-page{
@@ -251,7 +252,7 @@ nav{
   font-weight:600;
 }
 .overlay{
-  position: absolute;
+  position:static;
   background:linear-gradient(to right, rgba(0,0,0,.5),rgba(0,0,0,0));
   /*background: rgba(255, 255, 255, 0.5);*/
   color: var(--light);
