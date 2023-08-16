@@ -135,9 +135,12 @@ nav{
   .menu{
     display: flex;
   }
-  
+  .link-logo{
+    display: none;
+  }
 
 }
+
 .main-page{
   background-color: var(--dark);
   height: auto;
@@ -196,6 +199,32 @@ nav{
     overflow-x: auto;
     display: flex;
     justify-content: center;
+  }
+  #page-logo{
+    width:100px;
+    margin-left:-25px;
+    padding-left:10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  .link-logo{
+    display:flex;
+    height: 30px;
+  }
+  .menu a.connect{
+    display: none;
+  }
+  .menu a.discord{
+    display: none;
+  }
+  .menu a.twitter{
+    display: none;
+  }
+  .menu a.opensea{
+    display: none;
+  }
+  a.link-icon{
+    padding: 0;
   }
 }
 .intro-info{
@@ -340,6 +369,26 @@ nav{
     display: flex;
     justify-content: center;
   }
+  .menu{
+    display: flex;
+  }
+  .link-logo{
+    display: flex;
+  }
+  .phase:active{
+    box-shadow: 1px 1px 0px #f5c144,
+                  2px 2px 0px #f5c144,
+                  3px 3px 0px #f5c144,
+                  4px 4px 0px #f5c144,
+                  5px 5px 0px #f5c144,
+                  6px 6px 0px #f5c144,
+                  7px 7px 0px #f5c144,
+                  8px 8px 0px #f5c144,
+                  9px 9px 0px #f5c144;
+    cursor: default;
+  }
+
+
 }
 .creator-container {
   display: flex;
